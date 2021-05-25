@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="public/css/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css"
+    />
+    <link rel="icon" href="https://i.postimg.cc/5jW6SVbw/contact.png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Contact Me</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="https://adhirajbhatia.vercel.app"
+              >Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <form class="container my-4" action="/send" method="POST">
+      <div class="mb-3">
+        <label class="form-label">Enter Name <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/emojidex/112/bust-in-silhouette_1f464.png" alt="name" style="height:20px;" class="mb-2"> : </label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          name="name"
+        />
+       <div class="mb-3">
+        <label class="form-label">Enter Email Address 📧 : </label>
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+        />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Enter Phone Number 📞 : </label>
+        <input
+          type="tel"
+          class="form-control"
+          name="phone"
+        />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Enter Message 💬 : </label>
+        <textarea
+          class="form-control"
+          name="message"
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </body>
+</html>
