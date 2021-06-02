@@ -20,13 +20,9 @@ app.post("/send", (req, res) => {
   const output = `<h2>You have a new contact request .</h2><h3>Contact Details : </h3><h4>Name : ${req.body.name}</h4><h4>Email : ${req.body.email}</h4><h4>Phone Number : ${req.body.phone}</h4><h3>Message : </h3><h4>${req.body.message}</h4>`;
   let transporter = nodemailer.createTransport({
     service: "gmail",
-    host: "smtp.gmail.com",
     auth: {
       user: "adhirajb1109@gmail.com",
-      pass: "Adhiraj@Bhat",
-    },
-    tls: {
-      rejectUnauthorized: false,
+      pass: "maquqpxegpxpbkeq",
     },
   });
   let info = {
