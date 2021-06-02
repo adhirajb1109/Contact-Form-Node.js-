@@ -9,6 +9,7 @@ app.set("view engine", "handlebars");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use("/public", express.static(path.join(__dirname, "public")));
+const PORT = process.env.PORT || 3000;
 app.get("/", (req, res) => {
   res.render("contact", { layout: false });
 });
@@ -42,6 +43,6 @@ app.post("/send", (req, res) => {
   res.redirect("/success");
 });
 
-app.listen(1109, (req, res) => {
-  console.log("Server Initialized On Port 1109");
+app.listen(PORT, (req, res) => {
+  console.log(`Server Initialized On Port ${PORT}`);
 });
